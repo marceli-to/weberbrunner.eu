@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: templates/default
 updated_by: ed7dc1a4-9aa5-4821-b920-bf4cfa638aa4
-updated_at: 1763115507
+updated_at: 1763123706
 layout: templates/layout
 open_graph_type: website
 robots: index_follow
@@ -13,11 +13,11 @@ content:
     id: mhyk1489
     slides:
       -
-        id: mhyk84ex
-        slide: portrait.jpg
-      -
         id: mhyk151q
         slide: landscape.jpg
+      -
+        id: mhyk84ex
+        slide: portrait.jpg
       -
         id: mhyk870x
         slide: square.jpg

@@ -19,6 +19,11 @@ export default function initSlideshows() {
         nextEl: '.swiper-btn-next',
         prevEl: '.swiper-btn-prev',
       },
+      breakpoints: {
+        1024: {
+          centeredSlides: false,
+        },
+      },
       on: {
         slideChange: function() {
 
