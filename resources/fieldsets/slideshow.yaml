@@ -1,0 +1,15 @@
+title: Slideshow
+fields:
+  -
+    handle: slides
+    field:
+      type: grid
+      display: Slides
+      fields:
+        -
+          handle: slide
+          field:
+            max_files: 1
+            container: assets
+            type: assets
+            display: Slide

@@ -29,6 +29,13 @@ tabs:
                       fields:
                         -
                           import: editor
+                    slideshow:
+                      display: Slideshow
+                      instructions: 'Slideshow hinzufügen'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          import: slideshow
   sidebar:
     display: Sidebar
     sections:

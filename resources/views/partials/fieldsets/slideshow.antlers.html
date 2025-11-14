@@ -1,0 +1,24 @@
+<div 
+  class="swiper" 
+  data-slideshow>
+  <div class="swiper-wrapper opacity-80">
+    <div class="swiper-slide w-col-3 flex justify-center items-center bg-white">
+      <div class="flex flex-col justify-end h-[400px] md:h-[500px] lg:h-[600px] px-4 py-2">
+        <div>Projekt: Muster</div>
+        <div>Umsetzung: 2025</div>
+        <div>Budget: 2.5 Mio.</div>
+        <div>Auszeichnungen: Architekturpreise 2025, Gute Bauten 2025 (1. Platz)</div>
+      </div>
+    </div>
+    {{ slides }}
+      <div class="swiper-slide !w-auto flex justify-center items-center">
+        <img
+          src="{{ slide }}"
+          alt=""
+          width="{{ slide:width }}"
+          height="{{ slide:height }}"
+          class="h-[400px] md:h-[500px] lg:h-[600px] w-auto">
+      </div>
+    {{ /slides }}
+  </div>
+</div>
