@@ -1,0 +1,22 @@
+title: Editor
+fields:
+  -
+    handle: editor
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - removeformat
+        - superscript
+        - anchor
+        - nobr
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Text
+      container: assets
+      localizable: true
+      collapse: true

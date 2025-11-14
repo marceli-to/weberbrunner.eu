@@ -1,0 +1,20 @@
+title: Settings
+fields:
+  -
+    handle: template
+    field:
+      type: template
+      display: Template
+      folder: templates
+      validate:
+        - required
+  -
+    handle: layout
+    field:
+      type: template
+      display: Layout
+      default: templates/default
+      hide: true
+      folder: templates
+      listable: true
+      visibility: hidden

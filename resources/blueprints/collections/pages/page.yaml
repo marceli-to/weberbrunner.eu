@@ -1,0 +1,66 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              type: replicator
+              display: Content
+              sets:
+                main:
+                  display: Main
+                  icon: addon-boxes-stack
+                  sets:
+                    editor:
+                      display: Editor
+                      instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            import: settings
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo
+  new_tab:
+    display: 'New Tab'
+    sections:
+      -
+        display: 'New Section'
